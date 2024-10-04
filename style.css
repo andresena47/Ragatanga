@@ -1,0 +1,154 @@
+:root {
+    --azul-escuro: #4169ff;
+    --azul-meio-roxo: #718fe9;
+    --azul-roxo-claro: #a0b4f0;
+    --branco: #d0daf8;
+    --branco-branco: #ffffff;
+}
+  /* Estilos para a hotbar */
+  .hotbar {
+    overflow: hidden;
+    display: flex; /* Usar flexbox para alinhar itens */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 10px; /* Espaçamento interno */
+}
+
+.hotbar h1 {
+    color: var(--azul-roxo-claro); /* Cor do texto do título */
+    margin: 0; /* Remove margens padrão */
+    flex-grow: 1; /* Faz o título ocupar o máximo de espaço possível */
+}
+
+.hotbar a {
+    display: block;
+    color: var(--azul-escuro); /* Cor do texto dos links */
+    text-align: center; /* Centraliza o texto */
+    padding: 14px 16px; /* Espaçamento interno */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.hotbar a:hover {
+    background-color: #ddd; /* Cor de fundo ao passar o mouse */
+    color: black; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilos para o conteúdo principal */
+.container {
+    display: flex; /* Exibe as colunas lado a lado */
+    justify-content: space-between; /* Espaço entre as colunas */
+    margin-top: 20px; /* Margem acima da container */
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.column {
+    flex: 1;
+    padding: 10px;
+    min-width: 300px; /* Ajuste conforme necessário */
+    width: 48%; /* Define a largura das colunas */
+}
+
+#coluna1 {
+    flex: 1;
+    padding: 10px;
+    min-width: 300px; /* Ajuste conforme necessário */
+}
+#coluna2 {
+    font-size: 2em;
+    flex: 1;
+    padding: 10px;
+    min-width: 300px; /* Ajuste conforme necessário */
+}
+
+/* Estilos do primeiro curso */
+#curso-seguranca {
+    margin: 5px 0 10px 0; /* Ajuste superior e inferior do parágrafo */
+    font-size: 20px;
+}
+
+/* Estilos do segundo curso */
+#curso-redes {
+    margin: 5px 0 10px 0; /* Ajuste superior e inferior do parágrafo */
+    font-size: 20px;
+}
+
+#texto-informativo {
+    margin-top: 5px; /* Reduz o espaço entre os cursos e o texto informativo */
+    font-size: 20px;
+}
+
+/* Ajuste para todas as imagens */
+#coluna2 img {
+    display: block;
+    max-width: 100%;
+    margin-top: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+
+
+body {
+    background-color: var(--branco);
+    overflow-y: scroll;
+    font-family: Rubik, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+main {
+    background-color: white;
+    width: 560px;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.473);
+}
+h1 {
+    font-size: 2em;
+    color: var(--azul-roxo-claro);
+}
+
+h2 {
+    font-size: 1.5em;
+    color: var(--azul-meio-roxo) ;
+}
+
+img.lado {
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--branco)  ;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(26, 26, 255);
+}
+
+
+   /* Estilo para o botão de chat */
+   .chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chat-button:hover {
+    background-color: #0056b3;
+}
+
+.chat-button i {
+    margin-right: 5px;
+}
